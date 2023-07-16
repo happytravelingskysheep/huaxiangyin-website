@@ -1,0 +1,515 @@
+
+@keyframes welcome {
+    0% {
+        background-image: url(0.png);
+        opacity: 1.0;
+    }
+    1% {
+        background-image: url(1.png);
+        opacity: 1.0;
+    }
+    2% {
+        background-image: url(2.png);
+        opacity: 1.0;
+    }
+    3% {
+        background-image: url(3.png);
+        opacity: 1.0;
+    }
+    4% {
+        background-image: url(4.png);
+        opacity: 1.0;
+    }
+    5% {
+        background-image: url(5.png);
+        opacity: 1.0;
+    }
+    6% {
+        background-image: url(6.png);
+        opacity: 1.0;
+    }
+    7% {
+        background-image: url(7.png);
+        opacity: 1.0;
+    }
+    8% {
+        background-image: url(8.png);
+        opacity: 1.0;
+    }
+    9% {
+        background-image: url(9.png);
+        opacity: 1.0;
+    }
+    10% {
+        background-image: url(10.png);
+        opacity: 1.0;
+    }
+    11% {
+        background-image: url(11.png);
+        opacity: 1.0;
+    }
+    12% {
+        background-image: url(12.png);
+        opacity: 1.0;
+    }
+    17% {
+        background-image: url(17.png);
+        opacity: 1.0;
+    }
+    18% {
+        background-image: url(18.png);
+        opacity: 1.0;
+    }
+    19% {
+        background-image: url(19.png);
+        opacity: 1.0;
+    }
+    20% {
+        background-image: url(20.png);
+        opacity: 1.0;
+    }
+    21% {
+        background-image: url(21.png);
+        opacity: 1.0;
+    }
+    22% {
+        background-image: url(22.png);
+        opacity: 1.0;
+    }
+    23% {
+        background-image: url(23.png);
+        opacity: 1.0;
+    }
+    24% {
+        background-image: url(24.png);
+        opacity: 1.0;
+    }
+    25% {
+        background-image: url(25.png);
+        opacity: 1.0;
+    }
+    26% {
+        background-image: url(26.png);
+        opacity: 1.0;
+    }
+    27% {
+        background-image: url(27.png);
+        opacity: 1.0;
+    }
+    28% {
+        background-image: url(28.png);
+        opacity: 1.0;
+    }
+    29% {
+        background-image: url(29.png);
+        opacity: 1.0;
+    }
+    30% {
+        background-image: url(30.png);
+        opacity: 1.0;
+    }
+
+    80% {
+        background-image: url(30.png);
+        opacity: 0.9;
+    }
+    82% {
+        background-image: url(30.png);
+        opacity: 0.8;
+    }
+    84% {
+        background-image: url(30.png);
+        opacity: 0.7;
+    }
+    86% {
+        background-image: url(30.png);
+        opacity: 0.6;
+    }
+    88% {
+        background-image: url(30.png);
+        opacity: 0.5;
+    }
+    90% {
+        background-image: url(30.png);
+        opacity: 0.4;
+    }
+    92% {
+        background-image: url(30.png);
+        opacity: 0.3;
+    }
+    94% {
+        background-image: url(30.png);
+        opacity: 0.2;
+    }
+    96% {
+        background-image: url(30.png);
+        opacity: 0.1;
+    }
+    98% {
+        background-image: url(30.png);
+        opacity: 0.05;
+    }
+    100% {
+        background-image: url(30.png);
+        opacity: 0.0;
+    }
+}
+
+@keyframes welcome-content {
+    0% {
+        opacity: 0.0;
+    }
+    80% {
+        opacity: 0.1;
+    }
+    82% {
+        opacity: 0.2;
+    }
+    84% {
+        opacity: 0.3;
+    }
+    86% {
+        opacity: 0.4;
+    }
+    88% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0.6;
+    }
+    92% {
+        opacity: 0.7;
+    }
+    94% {
+        opacity: 0.8;
+    }
+    96% {
+        opacity: 0.9;
+    }
+    98% {
+        opacity: 0.95;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.anime {
+    background-color: white;
+    background-image: url(0.png), url(1.png), url(2.png), url(3.png), url(4.png), url(5.png), url(6.png), url(7.png), url(8.png), url(9.png), url(10.png), url(11.png), url(12.png), url(17.png), url(18.png), url(19.png), url(20.png), url(21.png), url(22.png), url(23.png), url(24.png), url(25.png), url(26.png), url(27.png), url(28.png), url(29.png), url(30.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    animation-name: welcome;
+    animation-duration: 4s;
+    opacity: 0.0;
+    position: fixed;
+    z-index: 2;
+}
+
+.frame{
+    background-color: coral;
+    background-image: linear-gradient(to right, #ff9966, #ff5e62);
+    width: 100%;
+    animation-name: welcome-frame;
+    animation-duration: 4s;
+    /*height: 2210px;*/
+}
+
+.navbar {
+    background-color: #333;
+    background-image: linear-gradient(to right, #222222, #444444, #222222);
+    position: fixed;
+    top: 0;
+    width: 99%;
+    height: 60px;
+    font-size: 0;
+    z-index: 1;
+}
+
+.frame div{
+    animation-name: welcome-frame;
+    animation-duration: 4s;
+}
+
+.navbar a {
+    line-height: 60px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    animation-name: welcome-frame;
+    animation-duration: 4s;
+}
+
+.logo {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#logo1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    background-image: url(logo1.png);
+}
+
+#logo2 {
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
+    font-family: 华光行草_CNKI;
+    font-size: 30px;
+}
+
+.nav {
+    width: 100px;
+    height: 60px;
+    font-size: 17px;
+    /*font-family: 华光淡古印_CNKI;*/
+    font-family: 华文中宋;
+    border-color: #dddddd;
+    border-width: 2px;
+    border-left-style: solid;
+    border-right-style: solid;
+    display: inline-block;
+}
+.nav:hover {
+    font-size: 18px;
+    background-color: #555555;
+    width: 106px;
+    height: 63px;
+    line-height: 63px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.content {
+    background-color: transparent;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.summary {
+    width: 100%;
+    height: 115vh;
+    /*margin-left: 15%;*/
+    /*margin-right: 15%;*/
+    /*margin-top: 60px;*/
+    /*margin-bottom: 60px;*/
+    /*position: relative;*/
+    /*top: 40px;*/
+}
+
+.summary_content {
+    width: 100%;
+    height: 100vh;
+    font-size: 19px;
+    line-height: 32px;
+}
+
+.summary_content img {
+    width: 100%;
+    height: 100%;
+}
+
+.summary_content_text {
+    width: 100%;
+    height: 100vh;
+    line-height: 200px;
+    text-align: center;
+    color: #eeeeee;
+}
+
+.summary_content_text_head{
+    position: absolute;
+    top: 15vh;
+    left: 0px;
+    width: 100%;
+    line-height: 200px;
+    text-align: center;
+    font-size: 14vh;
+    font-family: 华光淡古印_CNKI;
+}
+
+.summary_content_text_body{
+    position: absolute;
+    top: 32vh;
+    left: 0px;
+    width: 100%;
+    line-height: 200px;
+    font-size: 6.5vh;
+    font-family: 华光行书_CNKI;
+}
+
+/*.carousel {*/
+/*    width: 100%;*/
+/*    height: 180px;*/
+/*    position: relative;*/
+/*    top: 60px;*/
+/*    background-image: url(https://static.runoob.com/images/mix/img_mountains_wide.jpg);*/
+/*    background-color: transparent;*/
+/*    background-repeat: no-repeat;*/
+/*    text-align: center;*/
+/*    line-height: 63px;*/
+/*    color: #333;*/
+/*    font-size: 40px;*/
+/*    font-family: 华文行楷;*/
+/*}*/
+
+/*.poem-block {*/
+/*    width: 100%;*/
+/*    height: 450px;*/
+/*    background-color: rgba(240, 240, 240, .75);*/
+/*    text-align: center;*/
+/*    font-family: 华光淡古印_CNKI;*/
+/*    line-height: 40px;*/
+/*    position: relative;*/
+/*    border: #dddddd groove 5px;*/
+/*    margin-top: 60px;*/
+/*    z-index: 0;*/
+/*}*/
+
+/*.poem-image {*/
+/*    height: 400px;*/
+/*    background-color: transparent;*/
+/*    color: #333;*/
+/*    font-size: 25px;*/
+/*    text-align: center;*/
+/*    text-decoration-color: #555555;*/
+/*    display: inline-block;*/
+/*    font-family: 华光淡古印_CNKI;*/
+/*    line-height: 40px;*/
+/*    position: relative;*/
+/*    margin-top: 60px;*/
+/*    z-index: 0;*/
+/*}*/
+
+/*.poem {*/
+/*    height: 450px;*/
+/*    text-align: center;*/
+/*    font-family: 华光淡古印_CNKI;*/
+/*    line-height: 50px;*/
+/*    position: relative;*/
+/*    margin-top: 60px;*/
+/*    z-index: 0;*/
+/*}*/
+
+/*.poem span {*/
+/*    background-color: #dddddd;*/
+/*    background-image: linear-gradient(to right, #fffff0, #f9f6e0, #fff9f0);*/
+/*    color: #333;*/
+/*    font-size: 22px;*/
+/*    text-align: center;*/
+/*    text-decoration-color: #555555;*/
+/*    display: inline-block;*/
+/*    font-family: 华光淡古印_CNKI;*/
+/*    line-height: 66px;*/
+/*    position: relative;*/
+/*    margin: 2px;*/
+/*    z-index: 0;*/
+/*}*/
+
+.separate {
+    width: 60%;
+    /*height: 1950px;*/
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 60px;
+    /*margin-bottom: 60px;*/
+    padding-bottom: 60px;
+}
+
+.slidein-item{
+    background-color: #dddddd;
+    background-image: linear-gradient(to right, #fff7f0, #e0dddd, #fff0f0);
+    width: 100%;
+    height: 450px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30%);
+    transition: transform .4s ease-in-out,opacity .4s ease-out;
+}
+
+.slidein-item.slidein{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slidein-item-content{
+    position: absolute;
+    top: 70px;
+    left: 68px;
+    width: 226px;
+    height: 348px;
+}
+
+.slidein-item-content-head {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 24px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.slidein-item-content-text {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 266px;
+    height: 200px;
+    font-size: 19px;
+    line-height: 32px;
+}
+
+.slidein-item-img {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.slidein-item-img-1 {
+    background-image: url(seperate1.png);
+    top: 0px;
+    right: 48px;
+    width: 400px;
+    height: 500px;
+}
+
+.slidein-item-img-2 {
+    background-image: url(seperate2.png);
+    top: 45px;
+    right: 70px;
+    width: 350px;
+    height: 450px;
+}
+
+.slidein-item-img-3 {
+    background-image: url(seperate3.png);
+    top: 45px;
+    right: 70px;
+    width: 350px;
+    height: 450px;
+}
+
+.footer {
+    background-color: #333;
+    background-image: linear-gradient(to right, #222222, #444444, #222222);
+    width: 100%;
+    height: 200px;
+    font-size: 0;
+    bottom: 0;
+}

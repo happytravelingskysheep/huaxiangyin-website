@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>话乡音 续文脉 - 首页</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo1.png">
+    <script src="contentEffect.js"></script>
+    <script>
+        //图片懒加载解决方案 解决图片问题
+        window.onload = function(){
+            let imgs=document.querySelectorAll('img[src]');
+            let imgLen=imgs.length;
+            console.log(imgLen);
+            var num=0;
+            for(var i=0;i<imgs.length;i++){
+                !function(index){
+                    var img=new Image(),u=imgs[index].getAttribute('src');
+                    img.onload=function(){
+                        num++;
+                        imgs[index].src=u;
+                        if(num==imgLen){
+                            //加载完了，把布局展示出来
+                            document.getElementById("root").style.display = 'flex'
+                        }
+                    };
+                    img.src=u;
+                }(i);
+            }
+        };
+
+    </script>
+</head>
+<body>
+<div class="anime"></div>
+<div class="frame">
+    <div class="navbar">
+        <a class="logo" id="logo1" href="index_without_anime.html"></a>
+        <a class="logo" id="logo2" href="index_without_anime.html">话乡音 续文脉</a>
+        <a class="nav" href="index_without_anime.html">首页</a>
+        <a class="nav" href="#">项目简介</a>
+        <a class="nav" href="#">方言翻译</a>
+        <a class="nav" href="#">文化社区</a>
+        <a class="nav" href="#">产品</a>
+        <a class="nav" href="#">下载</a>
+    </div>
+    <div class="content">
+        <div class="summary">
+<!--            <div class="carousel">-->
+<!--                回乡偶书 <br>-->
+<!--                少小离家老大回，乡音无改鬓毛衰。<br>-->
+<!--                儿童相见不相识，笑问客从何处来。<br>-->
+<!--            </div>-->
+<!--            <div class="poem-block">-->
+<!--                <span class="poem-image">-->
+<!--                    <img src="https://th.bing.com/th/id/OIP.6faI3-YdLltvoZvOR4r5tQHaE7?pid=ImgDet&rs=1">-->
+<!--                </span>-->
+<!--                <span class="poem">-->
+<!--                    <span>-->
+<!--                        浓重的乡音<br>-->
+<!--                        是与家乡的契约<br>-->
+<!--                        一字一句<br>-->
+<!--                        讲述着我的身世<br>-->
+<!--                        书写着我的过往<br>-->
+<!--                    </span><span>-->
+<!--                        熟悉的腔调<br>-->
+<!--                        是醇厚的佳酿<br>-->
+<!--                        一口喝下<br>-->
+<!--                        思念的热烈<br>-->
+<!--                        滚烫着我的胸膛<br>-->
+<!--                    </span><span>-->
+<!--                        古老的方言<br>-->
+<!--                        是人生的罗盘<br>-->
+<!--                        指引着我来的方向<br>-->
+<!--                        回到心中的日月<br>-->
+<!--                        照耀的家乡<br>-->
+<!--                    </span>-->
+<!--                </span>-->
+            <div class="summary_content">
+                <img src="summary-image.jpg">
+                <div class="summary_content_text">
+                    <div class="summary_content_text_head">传承我们的文脉</div>
+                    <div class="summary_content_text_body">让乡音从此焕发新生</div>
+                </div>
+            </div>
+<!--            <div class="summary_text">-->
+<!--                <div class="summary_text_head">传承我们的文脉</div>-->
+<!--                <div class="summary_text_body">让乡音从此焕发新生</div>-->
+<!--            </div>-->
+        </div>
+        <div class="separate">
+            <div class="slidein-item">
+                <div class="slidein-item-content">
+                    <div class="slidein-item-content-head">方言翻译模型</div>
+                    <div class="slidein-item-content-text">
+                        全国各方言区方言点全覆盖<br>方言交流从此没有障碍
+                    </div>
+                </div>
+                <div class="slidein-item-img slidein-item-img-1"></div>
+            </div>
+            <div class="slidein-item">
+                <div class="slidein-item-content">
+                    <div class="slidein-item-content-head">方言文化社区</div>
+                    <div class="slidein-item-content-text">
+                        高质量的方言文化纪录片和教程<br>以及热爱方言的小伙伴<br>一起探索我们的文化
+                    </div>
+                </div>
+                <div class="slidein-item-img slidein-item-img-2"></div>
+            </div>
+            <div class="slidein-item">
+                <div class="slidein-item-content">
+                    <div class="slidein-item-content-head">方言文化产品</div>
+                    <div class="slidein-item-content-text">
+                        洋溢着活力的方言翻译产品、精品科普著作、地域文创作品<br>让生活充满雅致
+                    </div>
+                </div>
+                <div class="slidein-item-img slidein-item-img-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>
+</body>
+</html>
